@@ -29,11 +29,22 @@ Breve descripción de los eventos previstos en el pueblo, actividades culturales
 - Estado del cielo, lluvia, viento, temperaturas máximas y mínimas.  
 - Avisos activos y recomendaciones para la población.
  - **Fuente:**
-### 🚦 3. Tráfico y Accesos
-- Estado de las principales vías (N-332, A-70).
-- Retenciones, obras, accesos a playas y centros urbanos.
-- Situación del aparcamiento y transporte público (TRAM, buses).  
-- **Fuente:**
+  <!-- 🚦 3. Tráfico y Accesos -->
+  <section>
+    <h2>🚦 3. Tráfico y Accesos</h2>
+    <div class="card">
+      <ul>
+        <li>Estado de las principales vías: N-332 y A-70.</li>
+        <li>Accesos a playas y centros urbanos.</li>
+        <li>Aparcamiento y transporte público (TRAM, buses).</li>
+      </ul>
+      <p><b>Fuentes:</b>
+        <a href="https://infocar.dgt.es/etraffic/" target="_blank">DGT – Estado del tráfico</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.google.com/maps/@38.4286,-0.3972,14z/data=!5m1!1e1" target="_blank">Mapa tráfico (Google Maps)</a>
+      </p>
+    </div>
+  </section>
 ### 🔶 4. Sucesos en Campello (últimas 24h)
 - Robos, hurtos, incendios, accidentes o detenciones.
 - **Fuente:**
