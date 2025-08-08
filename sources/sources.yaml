@@ -1,11 +1,11 @@
-trafico:
+### 🚦 3. Tráfico y Accesos
   dgt: "https://infocar.dgt.es/etraffic/"
 
-clima:
+### 🌦️ 2. Predicción Meteorológica (AEMET)
   aemet: "https://www.aemet.es/es/eltiempo/prediccion/municipios/campello-el-id03050"
   playas: "https://www.aemet.es/es/eltiempo/prediccion/playas/carrer-la-mar-0305013"
 
-eventos:
+### 📣 7. Eventos y Actividades del Día
   ayuntamiento: "https://www.elcampello.es/es/agenda/"
 
 recursos:
