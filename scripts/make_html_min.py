@@ -5,6 +5,8 @@ from dateutil import tz
 # Rutas base
 ROOT = os.path.dirname(os.path.dirname(__file__)) if "__file__" in globals() else "."
 DAILY_DIR = os.path.join(ROOT, "daily")
+DATA_DIR = os.path.join(ROOT, "data")
+SOURCES_YAML = os.path.join(ROOT, "sources", "sources.yaml")
 
 # Fecha/hora local (Europe/Madrid)
 TZ = tz.gettz("Europe/Madrid")
