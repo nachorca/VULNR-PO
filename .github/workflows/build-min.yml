@@ -23,6 +23,18 @@ jobs:
 
       - name: Build minimal HTML
         run: python scripts/make_html_min.py
+              - name: List tree after build
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+          echo "----"
+          ls -la daily || true
+          echo "----"
+          find daily -maxdepth 3 -type f -name "*.html" -print || true
+
+      - name: Git status (qué se va a commitear)
+        run: |
+          git status
 
       - name: Commit HTML
         run: |
