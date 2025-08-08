@@ -21,47 +21,44 @@ out_html = os.path.join(out_dir, f"{D_ISO}-campello-sitrep.html")
 
 logo_rel = "../../assets/logo.png"  # desde daily/AAAA/MM/ a assets/
 
-html = f"""<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alicante Segura – Informe Diario (Campello) {DATE_STR}</title>
-<style>
-:root {{ --gold:#c6a558; --border:#e5e5e5; }}
-body {{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }}
-header {{ background: linear-gradient(90deg, #004e92, #000428); color:#fff; padding:20px; border-bottom:4px solid var(--gold); }}
-.wrap {{ display:flex; align-items:center; gap:20px; max-width:1100px; margin:auto; }}
-.wrap img {{ width:140px; height:auto; border-radius:10px; border:2px solid #fff; }}
-h1 {{ margin:0 0 6px 0; font-size:28px; font-weight:700; }}
-h2 {{ margin:5px 0 10px; font-size:20px; font-weight:400; }}
-.tag {{ color:#eee; line-height:1.5; }}
-main {{ max-width:1100px; margin:0 auto; padding:24px; }}
-.card {{ border:1px solid var(--border); border-radius:12px; padding:14px 16px; background:#fafafa; }}
-</style>
-</head>
-<body>
-<header>
-  <div class="wrap">
-    <img src="{logo_rel}" alt="SantiagoLegalConsulting">
-    <div>
-      <h1>📄 Alicante Segura</h1>
-      <h2>Informe Diario de Seguridad y Prevención – Campello</h2>
-      <div class="tag">
-        <b>🗓️ Fecha:</b> {DATE_STR} &nbsp;|&nbsp;
-        <b>🕒 Hora de emisión:</b> {TIME_STR} (hora local) &nbsp;|&nbsp;
-        <b>📧</b> info@santiagolegalconsulting.es
-      </div>
-    </div>
-  </div>
-</header>
-<main>
-  <div class="card">
-    <p>Plantilla mínima generada correctamente. En el siguiente paso añadiremos secciones.</p>
-  </div>
-</main>
-</body>
-</html>
-"""
+html = f"""
+"""### 🟢 1. Resumen General del Día
+Breve descripción de los eventos previstos en el pueblo, actividades culturales, sociales, mercantiles, etc.
+
+### 🌦️ 2. Predicción Meteorológica (AEMET)
+- Estado del cielo, lluvia, viento, temperaturas máximas y mínimas.  
+- Avisos activos y recomendaciones para la población.
+ - **Fuente:**
+### 🚦 3. Tráfico y Accesos
+- Estado de las principales vías (N-332, A-70).
+- Retenciones, obras, accesos a playas y centros urbanos.
+- Situación del aparcamiento y transporte público (TRAM, buses).  
+- **Fuente:**
+### 🔶 4. Sucesos en Campello (últimas 24h)
+- Robos, hurtos, incendios, accidentes o detenciones.
+- **Fuente:**
+### 🏖️ 5. Estado de las Playas y el Mar
+- Bandera del día, oleaje, presencia de medusas o corrientes.
+- Condiciones para el baño y recomendaciones de protección solar.  
+- **Fuente:**
+### 🛍️ 6. Información para Comercios y Empresas
+- Cortes de suministro (agua, luz, telecomunicaciones).
+- Eventos que puedan afectar a la actividad comercial.
+- Avisos preventivos o de oportunidad.
+- **Fuente:**
+  
+### 📣 7. Eventos y Actividades del Día
+- Actividades, fiestas, actos públicos, mercadillos o eventos deportivos que afecten a la vida pública o movilidad.
+- **Fuente:**
+
+### ⚠️ 8. Recomendaciones Generales
+- Consejos prácticos para residentes, turistas y comercios.
+- Seguridad, prevención climática, autoprotección y comportamiento ante emergencias.
+
+### 🔗 9. Enlaces y Recursos de Interés
+- Contactos útiles, servicios de emergencia.
+- Enlaces a clima en tiempo real, tráfico y alertas de organismos oficiales.
+- **Fuente:**
 
 with open(out_html, "w", encoding="utf-8") as f:
     f.write(html)
