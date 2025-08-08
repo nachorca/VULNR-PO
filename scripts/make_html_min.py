@@ -8,6 +8,20 @@ DAILY_DIR = os.path.join(ROOT, "daily")
 DATA_DIR = os.path.join(ROOT, "data")
 SOURCES_YAML = os.path.join(ROOT, "sources", "sources.yaml")
 
+def read_text(path, default=""):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read().strip()
+    except Exception:
+        return default
+
+def read_yaml(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return yaml.safe_load(f) or {}
+    except Exception:
+        return {}
+
 # Fecha/hora local (Europe/Madrid)
 TZ = tz.gettz("Europe/Madrid")
 now = datetime.now(TZ)
