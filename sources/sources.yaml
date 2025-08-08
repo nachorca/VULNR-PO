@@ -1,1 +1,12 @@
+trafico:
+  dgt: "https://infocar.dgt.es/etraffic/"
 
+clima:
+  aemet: "https://www.aemet.es/es/eltiempo/prediccion/municipios/campello-el-id03050"
+  playas: "https://www.aemet.es/es/eltiempo/prediccion/playas/carrer-la-mar-0305013"
+
+eventos:
+  ayuntamiento: "https://www.elcampello.es/es/agenda/"
+
+recursos:
+  emergencias: "https://www.112cv.com/"
