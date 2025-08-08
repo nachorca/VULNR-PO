@@ -23,6 +23,25 @@ out_html = os.path.join(out_dir, f"{D_ISO}-campello-sitrep.html")
 
 logo_rel = "../../assets/logo.png"  # desde daily/AAAA/MM/ a assets/
 
+# 1) Resumen desde data/resumen.txt
+RESUMEN = read_text(os.path.join(DATA_DIR, "resumen.txt"),
+                    "Breve descripción de los eventos previstos en el pueblo, actividades culturales, sociales y mercantiles…")
+
+# 2) Fuentes desde sources/sources.yaml
+SOURCES = read_yaml(SOURCES_YAML)
+
+def sources_to_list(d, prefix=""):
+    items = []
+    if isinstance(d, dict):
+        for k, v in d.items():
+            if isinstance(v, dict):
+                items += sources_to_list(v, prefix + k + ".")
+            else:
+                items.append(f'<li>{prefix}{k}: <a href="{v}" target="_blank" rel="noopener">{k}</a></li>')
+    return items
+
+SOURCES_LIST_HTML = "\n".join(sources_to_list(SOURCES)) or "<li>(Configura tus fuentes en sources/sources.yaml)</li>"
+
 html = f"""
 ### 🟢 1. Resumen General del Día
 Breve descripción de los eventos previstos en el pueblo, actividades culturales, sociales, mercantiles, etc.
