@@ -18,6 +18,24 @@ Breve descripción de los eventos previstos en el pueblo, actividades culturales
 - Bandera del día, oleaje, presencia de medusas o corrientes.
 - Condiciones para el baño y recomendaciones de protección solar.  
 - **Fuente:**
+### 🛍️ 6. Información para Comercios y Empresas
+- Cortes de suministro (agua, luz, telecomunicaciones).
+- Eventos que puedan afectar a la actividad comercial.
+- Avisos preventivos o de oportunidad.
+- **Fuente:**
+  
+### 📣 7. Eventos y Actividades del Día
+- Actividades, fiestas, actos públicos, mercadillos o eventos deportivos que afecten a la vida pública o movilidad.
+- **Fuente:**
+
+### ⚠️ 8. Recomendaciones Generales
+- Consejos prácticos para residentes, turistas y comercios.
+- Seguridad, prevención climática, autoprotección y comportamiento ante emergencias.
+
+### 🔗 9. Enlaces y Recursos de Interés
+- Contactos útiles, servicios de emergencia.
+- Enlaces a clima en tiempo real, tráfico y alertas de organismos oficiales.
+- **Fuente:**
 
 
 
