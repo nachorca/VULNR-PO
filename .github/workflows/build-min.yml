@@ -19,7 +19,8 @@ jobs:
           python-version: "3.11"
 
      - name: Install deps
-       run: |pip install python-dateutil pyyaml
+       run: |
+       pip install python-dateutil pyyaml
 
       - name: Build minimal HTML
         run: python scripts/make_html_min.py
