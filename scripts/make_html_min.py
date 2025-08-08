@@ -22,7 +22,7 @@ out_html = os.path.join(out_dir, f"{D_ISO}-campello-sitrep.html")
 logo_rel = "../../assets/logo.png"  # desde daily/AAAA/MM/ a assets/
 
 html = f"""
-"""### 🟢 1. Resumen General del Día
+### 🟢 1. Resumen General del Día
 Breve descripción de los eventos previstos en el pueblo, actividades culturales, sociales, mercantiles, etc.
 
 ### 🌦️ 2. Predicción Meteorológica (AEMET)
@@ -59,6 +59,7 @@ Breve descripción de los eventos previstos en el pueblo, actividades culturales
 - Contactos útiles, servicios de emergencia.
 - Enlaces a clima en tiempo real, tráfico y alertas de organismos oficiales.
 - **Fuente:**
+"""
 
 with open(out_html, "w", encoding="utf-8") as f:
     f.write(html)
