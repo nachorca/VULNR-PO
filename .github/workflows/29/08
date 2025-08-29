@@ -1,0 +1,40 @@
+name: Generar informe
+
+on:
+  push:
+    paths:
+      - 'data/datos_informe.json'
+      - 'templates/**'
+      - 'scripts/update_informe.py'
+      - '.github/workflows/generar_informe.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generar informe
+        run: python3 scripts/update_informe.py
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git add informe_seguridad_generado.md || true
+          if git diff --cached --quiet --exit-code; then
+            echo "Sin cambios en el informe."
+          else
+            git config user.name "${GITHUB_ACTOR}"
+            git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+            git commit -m "chore: update informe generado [skip ci]"
+            git push
+          fi
+
